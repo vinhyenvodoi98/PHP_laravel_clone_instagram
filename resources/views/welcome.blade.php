@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+
         <!-- Styles -->
         <style>
             html, body {
@@ -62,9 +63,13 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
         </style>
+
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     </head>
     <body>
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -79,8 +84,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Instagram
                 </div>
+
+                <div id="example">hello</div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
